@@ -19,6 +19,7 @@ public class Ejemplo07 {
         
         System.out.printf("El resultados es: %f\n", resultado);
         
+        // indica el numero de decimales que quiero que me presente %.2f
         System.out.printf("El resultados es: %.2f\n", resultado);
               
     }

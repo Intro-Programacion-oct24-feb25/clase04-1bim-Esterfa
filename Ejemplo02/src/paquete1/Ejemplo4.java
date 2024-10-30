@@ -12,7 +12,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo3 {
+public class Ejemplo4 {
 
     public static void main(String[] args) {
         // Ingreso de valores por teclado
@@ -24,29 +24,27 @@ public class Ejemplo3 {
         String nombreAsignatura2;
         double notaAsignatura1;
         double notaAsignatura2;
-        String nombreEstudiante;
+        double promedio;
         
-        System.out.println("introduccion");
+        System.out.println("Ingrese nombre de asignatura 1");
         nombreAsignatura1 = entrada.nextLine();
-        System.out.println("introduccion 2");
-        nombreAsignatura2 = entrada.nextLine();
-        
-        System.out.println("introduccion");
+        System.out.println("Ingrese nota de asignatura 1");
         notaAsignatura1 = entrada.nextDouble();
-        System.out.println("Introduccion 2");
+        System.out.println("ingrese nombre de asignatura 2");
+        entrada.nextLine(); // limpieza de buffer
+        nombreAsignatura2 = entrada.nextLine();
+        System.out.println("Ingrese nota de asignatura 2");
         notaAsignatura2 = entrada.nextDouble();
-        entrada.nextLine();
-        System.out.println("ester");
-        nombreEstudiante = entrada.nextLine();
         
+        promedio = (notaAsignatura1 + notaAsignatura2) /2;
         
-        System.out.printf("Asignatura 1: %s\nNota 1:%.2f\nAsignatura 2:%s\n "
-                + "Nota 2: %.2f\nNombre de estudiante: %s\n",
+        System.out.printf("Asignatura 1: %s\nNota 1:%.2f\nAsignatura 2:%s\n"
+                + "Nota 2: %.2f\npromedio de asignaturas:%.2f\10/n",
                 nombreAsignatura1,
                 notaAsignatura1,
                 nombreAsignatura2,
                 notaAsignatura2,
-                nombreEstudiante);
+                promedio);
    
     }
     
